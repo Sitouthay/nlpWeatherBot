@@ -1,0 +1,59 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - location
+  - weather
+  - forcast
+  # - weather_recommend
+  - ask_ability
+  - weather_with_city
+
+entities:
+  - city
+  - day
+
+responses:
+  utter_greet:
+  - text: "xin chào, mình có thể giúp bạn gì được ạ"
+
+  utter_cheer_up:
+  - text: "bạn thử xem ảnh này, mong nó sẽ giúp bạn hết buồn"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "nó giúp bạn đỡ buồn không?"
+
+  utter_happy:
+  - text: "tốt rồi, cố gắng nhé"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "mình là bot, bởi rasa phát hành"
+
+  utter_forecast_location:
+  - text: "bạn muốn dữ báo thời tiết ở đâu"
+
+  utter_location:
+  - text: "bạn muốn biết thời tiết ở đâu ạ?"
+
+  utter_ask_ability:
+  - text: "Tôi có thể cung cấp thông tin về thời tiết và dữ báo thời tiết trong vòng 5 ngày nhé !"
+
+actions:
+  - action_weather_api
+  - forcast_weather_api
+  # - action_weather_recommend
+  - action_weather_city
+
+session_config:
+  session_expiration_time: 1
+  carry_over_slots_to_new_session: false

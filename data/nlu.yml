@@ -1,0 +1,183 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - xin chào
+    - chào bạn
+    - chào
+    - ê nè
+    - ông ơi
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - hẹn gặp lại nhé
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - dạ
+    - vâng ạ
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - không
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - tuyệt vời lắm
+    - tốt lắm nhé
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - tôi đang buồn nè
+    - buồn
+    - tôi buồn lắm
+    - rất buồn
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - bạn tên gì?
+    - ông là ai?
+    - bạn là gì?
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: weather
+  examples: |
+    - thời tiết bây giờ
+    - thời tiết hôm nay như thế nào
+    - thời tiết ngày hôm nay
+    - cho tôi biết thời tiết hiện tại
+
+# - intent: weather_recommend
+#   examples: |
+#     - hôm nay có mưa không
+#     - hôm nay thời tiết có mưa không 
+#     - hôm nay có nóng không
+#     - hôm nay thời tiết có nóng không 
+#     - hôm nay trời đẹp không
+
+- intent: forcast
+  examples: |
+    - dự báo thời tiết của [ngày mai](day) ở [Quy Nhon](city)
+    - cho tôi biết thời tiết [ngày mai](day) ở [Quy Nhon](city)
+    - trong vòng [5 ngày](day) ở [Quy Nhon](city) thời tiết sẽ như thế nào
+    - [ngày mai](day) [Quy Nhon](city) thời tiết sẽ như thế nào
+    - dự báo thời tiết [3 ngày](day) ở [Quy Nhon](city)
+    - [4 ngày](day) nữa thời tiết ở [Quy Nhon](city) sẽ như thế nào
+
+- intent: ask_ability
+  examples: |
+    - giới thiệu chức năng
+    - bạn có thể làm dược gì
+    - cho tôi biết chức năng của bạn
+    - chức năng
+
+- intent: weather_with_city
+  examples: |
+    - Hôm nay ở [Quy Nhon](city) thời tiết như thế nào
+    - [Quy Nhon](city) thời tiết như thế nào
+    - cho tôi biết thời tiết ở [Quy Nhon](city)
+
+- lookup: day
+  examples: |
+    - ngày mai
+    - ngày mốt
+    - 1 ngày
+    - 2 ngày
+    - 3 ngày
+    - 4 ngày
+    - 5 ngày
+
+- lookup: city
+  examples: |
+    - Quy Nhon
+    - Ha Noi
+    - Gia Lai
+    - Hue
+    - Quang Ngai
+    - Quy Nhơn
+    - Hà Nội
+    - Huế
+    - Quảng Ngãi
+
+- intent: location
+  examples: |
+    - Ha Noi
+    - ha noi
+    - ho chi minh
+    - Quy Nhơn
+    - Hà Nội
+    - Huế
+    - Hồ Chí Minh
+    - Quang Ngãi
+    - Vinh
+    - Gia Lai
